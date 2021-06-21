@@ -221,18 +221,18 @@
 </ul>
 <h1 id="edit-sshconfig">Edit ~/.ssh/config</h1>
 <p>To specify multiple key configurations in the config of .ssh in the user home folder.</p>
-<pre><code># Same Host and HostName means the default setting of the HostName
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Same Host and HostName means the default setting of the HostName</span>
 Host github.com
   HostName github.com
   User git
   IdentityFile ~/.ssh/user1
 
-# Another key with customized Host but with the same HostName
+<span style="color:#75715e"># Another key with customized Host but with the same HostName</span>
 Host epi
   HostName github.com
   User git
   IdentityFile ~/.ssh/user2
-</code></pre><h1 id="change-the-git-url-for-repo-that-uses-the-another-key">Change the git url for repo that uses the another key</h1>
+</code></pre></div><h1 id="change-the-git-url-for-repo-that-uses-the-another-key">Change the git url for repo that uses the another key</h1>
 <pre><code>git@epi:user/repo.git
 </code></pre><h1 id="sourcetree">SourceTree</h1>
 <ul>
