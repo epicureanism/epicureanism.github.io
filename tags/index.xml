@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Ricky</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Jun 2021 19:28:02 +0800</lastBuildDate><atom:link href="http://epicureanism.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Jun 2021 18:00:02 +0800</lastBuildDate><atom:link href="http://epicureanism.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>http://epicureanism.github.io/tags/git/</link>
+      <pubDate>Mon, 21 Jun 2021 18:00:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>http://epicureanism.github.io/tags/sql/</link>
+      <pubDate>Mon, 21 Jun 2021 10:28:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/tags/sql/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dotnet core</title>
       <link>http://epicureanism.github.io/tags/dotnet-core/</link>
