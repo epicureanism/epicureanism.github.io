@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.83.1" />
+
+  <title>i18n notes &middot; Ricky</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="i18n notes">
+<meta itemprop="description" content="dotnet core API 多語系環境設定筆記。 A notes for i18n settings of dotnet core API."><meta itemprop="datePublished" content="2021-06-18T19:28:02&#43;08:00" />
+<meta itemprop="dateModified" content="2021-06-18T19:28:02&#43;08:00" />
+<meta itemprop="wordCount" content="567">
+<meta itemprop="keywords" content="i18n,dotnet core," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="i18n notes"/>
+<meta name="twitter:description" content="dotnet core API 多語系環境設定筆記。 A notes for i18n settings of dotnet core API."/>
+
+
+<meta property="og:title" content="i18n notes" />
+<meta property="og:description" content="dotnet core API 多語系環境設定筆記。 A notes for i18n settings of dotnet core API." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://epicureanism.github.io/posts/i18n/readme/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-18T19:28:02&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-18T19:28:02&#43;08:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://epicureanism.github.io/#author",
+      "name": "Ricky Lin",
+      "image": {
+        "@type":"ImageObject",
+        
+        
+      },
+      "description": "Ricky's Blog"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://epicureanism.github.io/#website",
+      "url": "http://epicureanism.github.io/",
+      "name": "Ricky",
+      "description": "Ricky's Blog",
+      "publisher": {
+        "@id": "http://epicureanism.github.io/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://epicureanism.github.io/posts/i18n/readme/#webpage",
+      "url": "http://epicureanism.github.io/posts/i18n/readme/",
+      "name": "i18n notes",
+      "isPartOf": {
+        "@id": "http://epicureanism.github.io/#website"
+      },
+      "about": {
+         "@id": "http://epicureanism.github.io/#author"
+      },
+      "datePublished": "2021-06-18T19:28:02+08:00",
+      "dateModified": "2021-06-18T19:28:02+08:00",
+      "description": "dotnet core API 多語系環境設定筆記。 A notes for i18n settings of dotnet core API.",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://epicureanism.github.io/posts/i18n/readme/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://epicureanism.github.io/posts/i18n/readme/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://epicureanism.github.io/posts/i18n/readme/#webpage"
+      },
+      "headline": "i18n notes",
+      "datePublished": "2021-06-18T19:28:02+08:00",
+      "dateModified": "2021-06-18T19:28:02+08:00",
+      "publisher": {
+        "@id": "http://epicureanism.github.io/#author"
+      },
+      "keywords": [
+        "i18n"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://epicureanism.github.io/posts/i18n/readme/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+      
+
+      <h1>Ricky</h1>
+
+      
+      <p class="lead">Ricky&#39;s Blog</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://epicureanism.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">i18n notes</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2021-06-18T19:28:02&#43;0800">Jun 18, 2021</time> <span class="readtime">&middot; 3 min read</span>
+  </div>
+
+  <div>
+  <p>dotnet core API 多語系環境設定筆記。
+A notes for i18n settings of dotnet core API.</p>
+<hr>
+<ul>
+<li><a href="#net-core">.net core</a>
+<ul>
+<li><a href="#resx-files">Resx files</a></li>
+<li><a href="#startupcs">startup.cs</a></li>
+<li><a href="#enum-to-read-resx">Enum to read resx</a>
+<ul>
+<li><a href="#enum-converter">Enum converter</a></li>
+<li><a href="#resource-naming-in-resx-files">Resource Naming in Resx files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#table-i18n">Table i18n</a>
+<ul>
+<li><a href="#separate-translation-table-approach">Separate translation table approach</a></li>
+<li><a href="#ref">Ref</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="net-core">.net core</h1>
+<p>Purpose of this section:</p>
+<ol>
+<li>using resource files to define contents of different languages</li>
+<li>setup the .net core env to enable language selection in each request</li>
+<li>the enum can also use the resx files to display different languages of each items.</li>
+</ol>
+<h2 id="resx-files">Resx files</h2>
+<ul>
+<li>To make the Resx can be shared between different projects, make them public by
+<ul>
+<li>Right click on the resx file to setup the property of &ldquo;Custom tool&rdquo; as &ldquo;PublicResXFileCodeGenerator&rdquo;</li>
+<li>two lines in the resx.cs must be replaced the keywords of &ldquo;internal&rdquo; with &ldquo;public&rdquo;</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#75715e">//REPLACE &#34;internal&#34; with &#34;public&#34;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Common</span> {        
+    <span style="color:#75715e">// ... 略        
+</span><span style="color:#75715e"></span>               
+    <span style="color:#75715e">//REPLACE &#34;internal&#34; with &#34;public&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">    [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">global</span>::System.Resources.ResourceManager ResourceManager {
+</code></pre></div><h2 id="startupcs">startup.cs</h2>
+<ul>
+<li>①to set default language and supported languages using &ldquo;RequestLocalizationOptions&rdquo;</li>
+<li>②to set how to handle language selection of each request in middleware of &ldquo;UseRequestLocalization&rdquo;, the default providers in the orders of:
+<ol>
+<li>QueryStringRequestCultureProvider</li>
+<li>CookieRequestCultureProvider</li>
+<li>AcceptLanguageHeaderRequestCultureProvider</li>
+</ol>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> ConfigureServices(IServiceCollection services)
+{
+    <span style="color:#75715e">//******* ① Setup default language and supported languages *********/
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">#region Middleware after UseRouting, before UseEndpoint
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> supportedCultures = getSupportedCulture();
+    <span style="color:#66d9ef">var</span> defaultCulture = getDefaultCulture();
+    <span style="color:#66d9ef">var</span> localizationOptions = <span style="color:#66d9ef">new</span> RequestLocalizationOptions()
+        .SetDefaultCulture(defaultCulture)
+        .AddSupportedCultures(supportedCultures)
+        .AddSupportedUICultures(supportedCultures);
+
+    <span style="color:#75715e">//******* ② this line will handle language selection of each request *********/
+</span><span style="color:#75715e"></span>    app.UseRequestLocalization(localizationOptions);
+    <span style="color:#75715e">#endregion
+</span><span style="color:#75715e"></span>}
+
+<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">string</span> getDefaultCulture()
+{
+    <span style="color:#66d9ef">return</span> GeConfigManager.LanguageSettings.DefaultLanguage;
+}
+<span style="color:#75715e">//The supported languaes can be stored as a static IEnumerable object
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">string</span>[] getSupportedCulture()
+{
+    <span style="color:#66d9ef">var</span> rs = <span style="color:#66d9ef">new</span> List&lt;<span style="color:#66d9ef">string</span>&gt;(); 
+    <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> lang <span style="color:#66d9ef">in</span> GeConfigManager.LanguageSettings.SupportedLanguages)
+    {
+        rs.Add(lang.LanguageCode);
+    }
+
+    <span style="color:#66d9ef">return</span> rs.ToArray();
+}
+</code></pre></div><h2 id="enum-to-read-resx">Enum to read resx</h2>
+<p>Purpose of this section:</p>
+<ul>
+<li>i18n of Enum members</li>
+<li>To share resx contents with Enum</li>
+</ul>
+<h3 id="enum-converter">Enum converter</h3>
+<p>This enum converter is a enum decorator to convert enum members as multilingual KVP</p>
+<blockquote>
+<p><a href="https://gist.github.com/epicureanism/878a2c6af9ca56211a5a7f552558c1d0#file-enumconverter-cs">Full implementation</a></p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e">/// 列舉型別與JSON之間的互相轉換，轉換之結果具多語系效果。
+</span><span style="color:#75715e">/// 多語系之翻譯應定義於resx 檔案中。
+</span><span style="color:#75715e">/// Enum 的 JSON 格式為KVP型式。
+</span><span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e">/// &lt;typeparam name=&#34;T&#34;&gt;&lt;/typeparam&gt;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EnumConverter</span>&lt;T&gt; : JsonConverter <span style="color:#66d9ef">where</span> T : Enum
+{
+    ...skipped...
+
+    <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// Enum to JSON.
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// 並支援flag 型式的enum type.
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;param name=&#34;writer&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;param name=&#34;value&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;param name=&#34;serializer&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> WriteJson(JsonWriter writer, <span style="color:#66d9ef">object</span> <span style="color:#66d9ef">value</span>, JsonSerializer serializer)
+    {
+        ...skipped...
+    }
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> IsFlagEnum()
+    {
+        <span style="color:#66d9ef">return</span> Attribute.IsDefined(<span style="color:#66d9ef">typeof</span>(T), <span style="color:#66d9ef">typeof</span>(FlagsAttribute));
+    }
+
+    <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// JSON to Enum. 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// { &#34;key&#34;: &#34;EnumKey&#34;, &#34;value&#34;: &#34;Enum value in i18n&#34; }
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;param name=&#34;reader&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;param name=&#34;objectType&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;param name=&#34;existingValue&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;param name=&#34;serializer&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;returns&gt;&lt;/returns&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;exception cref=&#34;JsonException&#34;&gt;&lt;/exception&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">object</span> ReadJson(JsonReader reader, Type objectType, <span style="color:#66d9ef">object</span> existingValue, JsonSerializer serializer)
+    {
+        ...skipped...
+    }
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">object</span> ToEnumObject(Dictionary&lt;T, <span style="color:#66d9ef">string</span>&gt; dictionary)
+    {
+        ...skipped...
+    }
+
+    <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// 是dictionary，且Key 的型態為 Enum 才可轉換
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;param name=&#34;objectType&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;returns&gt;&lt;/returns&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">bool</span> CanConvert(Type objectType)
+    {
+        ...skipped...
+    }
+
+}
+</code></pre></div><p>To decorate the Enum</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#75715e">//To decorate the Enum
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">[JsonConverter(typeof(EnumConverter&lt;AccountStatus&gt;))]</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">enum</span> AccountStatus
+{        
+    Default,
+    Normal,
+    Suspend,
+    Lock,
+    Close
+}
+</code></pre></div><p>Expected JSON output according above decoration</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#e6db74">&#34;account_status&#34;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#34;key&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Default&#34;</span>,
+    <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Default&#34;</span>
+    <span style="color:#75715e">//in Chinese (if resx was setup correctly)
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//&#34;value&#34;: &#34;預設&#34; 
+</span><span style="color:#75715e"></span>}
+</code></pre></div><h3 id="resource-naming-in-resx-files">Resource Naming in Resx files</h3>
+<pre><code>{EnumType}_{EnumMember}
+Ex.
+AccountStatus_Default
+AccountStatus_Normal
+AccountStatus_Suspend
+</code></pre><hr>
+<h1 id="table-i18n">Table i18n</h1>
+<ul>
+<li>For more detail, please refer to <a href="https://www.slideshare.net/epicureanism/an-approach-to-design-net-core-translation-tables">my slides</a></li>
+</ul>
+<h2 id="separate-translation-table-approachhttpsmediumcomwalkindatabase-internationalization-i18n-localization-l10n-design-patterns-94ff372375c6"><a href="https://medium.com/walkin/database-internationalization-i18n-localization-l10n-design-patterns-94ff372375c6">Separate translation table approach</a></h2>
+<p>Assumimg the product_type and products table are considered i18n tables.</p>
+<ul>
+<li>
+<p>products</p>
+<ul>
+<li>id</li>
+<li>name</li>
+<li>product_type_id</li>
+</ul>
+</li>
+<li>
+<p>productc_translations</p>
+<ul>
+<li>id</li>
+<li>name_translation</li>
+<li>language_id</li>
+<li>product_id</li>
+</ul>
+</li>
+<li>
+<p>product_type</p>
+<ul>
+<li>id</li>
+<li>name</li>
+</ul>
+</li>
+<li>
+<p>product_type_translation</p>
+<ul>
+<li>id</li>
+<li>name_translation</li>
+<li>language_id</li>
+<li>product_type_id</li>
+</ul>
+</li>
+<li>
+<p>languages</p>
+<ul>
+<li>language_code</li>
+<li>name</li>
+<li>name_in_native</li>
+<li>date_format</li>
+<li>currency</li>
+</ul>
+</li>
+</ul>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://www.ietf.org/rfc/rfc4646.txt">RFC-4646</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE">code list on wiki</a></li>
+<li><a href="https://codex.wordpress.org/zh-tw:%E5%A4%9A%E5%9C%8B%E8%AA%9E%E8%A8%80%E6%89%8B%E5%86%8A">Language and native names</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ISO_4217">Currency - ISO 4217</a></li>
+<li><a href="https://www.xe.com/symbols.php">Currency Symbols</a></li>
+</ul>
+
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="http://epicureanism.github.io/tags/i18n/" class="tag-link">i18n</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="http://epicureanism.github.io/posts/i18n/readme/"
+     data-text="i18n notes"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="http://epicureanism.github.io/posts/i18n/readme/"
+     data-text="i18n notes"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="http://epicureanism.github.io/posts/i18n/readme/"
+     data-text="i18n notes"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="http://epicureanism.github.io/posts/i18n/readme/"
+     data-text="i18n notes"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="http://epicureanism.github.io/posts/i18n/readme/"
+     data-text="i18n notes"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Ricky Lin 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Ricky</title>
+    <link>http://epicureanism.github.io/tags/</link>
+    <description>Recent content in Tags on Ricky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Jun 2021 19:28:02 +0800</lastBuildDate><atom:link href="http://epicureanism.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dotnet core</title>
+      <link>http://epicureanism.github.io/tags/dotnet-core/</link>
+      <pubDate>Fri, 18 Jun 2021 19:28:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/tags/dotnet-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>i18n</title>
+      <link>http://epicureanism.github.io/tags/i18n/</link>
+      <pubDate>Fri, 18 Jun 2021 19:28:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/tags/i18n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>http://epicureanism.github.io/tags/mysql/</link>
+      <pubDate>Fri, 18 Jun 2021 19:28:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

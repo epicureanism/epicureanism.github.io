@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Ricky</title>
+    <link>http://epicureanism.github.io/posts/</link>
+    <description>Recent content in Posts on Ricky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Jun 2021 19:28:02 +0800</lastBuildDate><atom:link href="http://epicureanism.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>i18n notes</title>
+      <link>http://epicureanism.github.io/posts/i18n/readme/</link>
+      <pubDate>Fri, 18 Jun 2021 19:28:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/posts/i18n/readme/</guid>
+      <description>dotnet core API 多語系環境設定筆記。 A notes for i18n settings of dotnet core API.</description>
+    </item>
+    
+    <item>
+      <title>MySQL notes</title>
+      <link>http://epicureanism.github.io/posts/sql/mysql/</link>
+      <pubDate>Fri, 18 Jun 2021 19:28:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/posts/sql/mysql/</guid>
+      <description>MySQL Utilities Console db export mysqldbexport --server={user}:{password}@{server.domain.com}:3306 {db_name} --output-file={dump_ge.sql} </description>
+    </item>
+    
+  </channel>
+</rss>
