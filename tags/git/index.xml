@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Ricky</title>
+    <link>http://epicureanism.github.io/tags/git/</link>
+    <description>Recent content in git on Ricky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Jun 2021 18:00:02 +0800</lastBuildDate><atom:link href="http://epicureanism.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SourceTree with Multiple SSH Keys</title>
+      <link>http://epicureanism.github.io/posts/git/multiple_keys/</link>
+      <pubDate>Mon, 21 Jun 2021 18:00:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/posts/git/multiple_keys/</guid>
+      <description>To setup multiple ssh keys usage in SourceTruee on Windows.</description>
+    </item>
+    
+  </channel>
+</rss>

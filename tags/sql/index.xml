@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on Ricky</title>
+    <link>http://epicureanism.github.io/tags/sql/</link>
+    <description>Recent content in SQL on Ricky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Jun 2021 10:28:02 +0800</lastBuildDate><atom:link href="http://epicureanism.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Table with Adjacency List structure</title>
+      <link>http://epicureanism.github.io/posts/sql/tree/</link>
+      <pubDate>Mon, 21 Jun 2021 10:28:02 +0800</pubDate>
+      
+      <guid>http://epicureanism.github.io/posts/sql/tree/</guid>
+      <description>Tables with Adjacency List Inspired by the adjacency list of Models for hierarchical data</description>
+    </item>
+    
+  </channel>
+</rss>

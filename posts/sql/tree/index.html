@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.83.1" />
+
+  <title>A Table with Adjacency List structure &middot; Ricky</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="A Table with Adjacency List structure">
+<meta itemprop="description" content="Tables with Adjacency List Inspired by the adjacency list of Models for hierarchical data"><meta itemprop="datePublished" content="2021-06-21T10:28:02&#43;08:00" />
+<meta itemprop="dateModified" content="2021-06-21T10:28:02&#43;08:00" />
+<meta itemprop="wordCount" content="127">
+<meta itemprop="keywords" content="SQL," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Table with Adjacency List structure"/>
+<meta name="twitter:description" content="Tables with Adjacency List Inspired by the adjacency list of Models for hierarchical data"/>
+
+
+<meta property="og:title" content="A Table with Adjacency List structure" />
+<meta property="og:description" content="Tables with Adjacency List Inspired by the adjacency list of Models for hierarchical data" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://epicureanism.github.io/posts/sql/tree/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-21T10:28:02&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-21T10:28:02&#43;08:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://epicureanism.github.io/#author",
+      "name": "Ricky Lin",
+      "image": {
+        "@type":"ImageObject",
+        
+        
+      },
+      "description": "Ricky's Blog"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://epicureanism.github.io/#website",
+      "url": "http://epicureanism.github.io/",
+      "name": "Ricky",
+      "description": "Ricky's Blog",
+      "publisher": {
+        "@id": "http://epicureanism.github.io/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://epicureanism.github.io/posts/sql/tree/#webpage",
+      "url": "http://epicureanism.github.io/posts/sql/tree/",
+      "name": "A Table with Adjacency List structure",
+      "isPartOf": {
+        "@id": "http://epicureanism.github.io/#website"
+      },
+      "about": {
+         "@id": "http://epicureanism.github.io/#author"
+      },
+      "datePublished": "2021-06-21T10:28:02+08:00",
+      "dateModified": "2021-06-21T10:28:02+08:00",
+      "description": "Tables with Adjacency List Inspired by the adjacency list of Models for hierarchical data",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://epicureanism.github.io/posts/sql/tree/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://epicureanism.github.io/posts/sql/tree/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://epicureanism.github.io/posts/sql/tree/#webpage"
+      },
+      "headline": "A Table with Adjacency List structure",
+      "datePublished": "2021-06-21T10:28:02+08:00",
+      "dateModified": "2021-06-21T10:28:02+08:00",
+      "publisher": {
+        "@id": "http://epicureanism.github.io/#author"
+      },
+      "keywords": [
+        "SQL"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://epicureanism.github.io/posts/sql/tree/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+      
+
+      <h1>Ricky</h1>
+
+      
+      <p class="lead">Ricky&#39;s Blog</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://epicureanism.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">A Table with Adjacency List structure</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2021-06-21T10:28:02&#43;0800">Jun 21, 2021</time> <span class="readtime">&middot; 1 min read</span>
+  </div>
+
+  <div>
+  <h1 id="tables-with-adjacency-list">Tables with Adjacency List</h1>
+<p>Inspired by the adjacency list of <a href="https://www.slideshare.net/billkarwin/models-for-hierarchical-data" title="Models for hierarchical data">Models for hierarchical data</a></p>
+<h2 id="to-show-the-depth-id-concatenation-and-sum-up-of-the-tree">To show the depth, id concatenation, and sum up of the tree</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">with</span> <span style="color:#66d9ef">recursive</span> tree (id, agent_id, account, depth, path, id_as_path, deposit_sum) <span style="color:#66d9ef">as</span> (
+  <span style="color:#66d9ef">select</span> u.id, u.agent_id, u.account, <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">as</span> depth, <span style="color:#66d9ef">cast</span>(u.account <span style="color:#66d9ef">as</span> char(<span style="color:#ae81ff">200</span>)) <span style="color:#66d9ef">as</span> path, <span style="color:#66d9ef">cast</span>(u.id <span style="color:#66d9ef">as</span> char(<span style="color:#ae81ff">200</span>)) <span style="color:#66d9ef">as</span> id_as_path
+		, s.debit_sum <span style="color:#66d9ef">as</span> deposit_sum
+  <span style="color:#66d9ef">from</span> <span style="color:#66d9ef">user</span> u <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> vw_user_deposit_stat s <span style="color:#66d9ef">on</span> u.id <span style="color:#f92672">=</span> s.user_id			
+  <span style="color:#66d9ef">where</span>      agent_id <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">null</span> 
+  <span style="color:#66d9ef">union</span> <span style="color:#66d9ef">all</span>
+  <span style="color:#66d9ef">select</span> u.id, u.agent_id, u.account, tree.depth <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">as</span> depth, CONCAT(tree.path, <span style="color:#e6db74">&#39;,&#39;</span>, u.account) <span style="color:#66d9ef">as</span> path, CONCAT(tree.id_as_path, <span style="color:#e6db74">&#39;,&#39;</span>, u.id) <span style="color:#66d9ef">as</span> id_as_path
+		, s.debit_sum <span style="color:#66d9ef">as</span> deposit_sum
+  <span style="color:#66d9ef">from</span> <span style="color:#66d9ef">user</span> u <span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> tree <span style="color:#66d9ef">on</span> u.agent_id <span style="color:#f92672">=</span> tree.id
+			  <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> vw_user_deposit_stat s <span style="color:#66d9ef">on</span> u.id <span style="color:#f92672">=</span> s.user_id
+)
+<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span>
+<span style="color:#66d9ef">from</span> tree
+</code></pre></div><h1 id="ref">Ref</h1>
+<ul>
+<li>
+<p><a href="https://www.slideshare.net/billkarwin/models-for-hierarchical-data" title="Models for hierarchical data">Models for hierarchical data</a></p>
+</li>
+</ul>
+
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="http://epicureanism.github.io/tags/sql/" class="tag-link">SQL</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="http://epicureanism.github.io/posts/sql/tree/"
+     data-text="A Table with Adjacency List structure"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="http://epicureanism.github.io/posts/sql/tree/"
+     data-text="A Table with Adjacency List structure"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="http://epicureanism.github.io/posts/sql/tree/"
+     data-text="A Table with Adjacency List structure"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="http://epicureanism.github.io/posts/sql/tree/"
+     data-text="A Table with Adjacency List structure"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="http://epicureanism.github.io/posts/sql/tree/"
+     data-text="A Table with Adjacency List structure"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Ricky Lin 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>
